@@ -1,0 +1,12 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ux49010
+      user: BPRAVEEN946
+      role: ACCOUNTADMIN
+      database: CDW_TEST
+      warehouse: COMPUTE_WH
+      schema: PUBLIC
+      threads: 4
