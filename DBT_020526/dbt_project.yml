@@ -1,1 +1,18 @@
 
+name: cdw_dbt
+version: '1.0.0'
+profile: default
+
+model-paths: ["models"]
+
+models:
+  cdw_dbt:
+    staging:
+      +schema: BRONZE
+      +materialized: view
+    silver:
+      +schema: SILVER
+      +materialized: table
+    gold:
+      +schema: GOLD
+      +materialized: table
