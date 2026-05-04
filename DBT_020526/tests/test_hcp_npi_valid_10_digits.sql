@@ -1,0 +1,4 @@
+SELECT HCP_NPI
+FROM {{ ref('silver_veeva_calls') }}
+WHERE LENGTH(HCP_NPI) != 10
+   OR TRY_TO_NUMBER(HCP_NPI) IS NULL

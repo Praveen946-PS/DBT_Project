@@ -1,4 +1,3 @@
-
 name: cdw_dbt
 version: '1.0.0'
 profile: default

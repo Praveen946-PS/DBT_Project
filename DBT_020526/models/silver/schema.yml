@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: silver_veeva_calls
+    columns:
+      - name: HCP_NPI
+        tests:
+          - not_null
+      - name: CALL_ID
+        tests:
+          - not_null
+      - name: CALL_DATE
+        tests:
+          - not_null

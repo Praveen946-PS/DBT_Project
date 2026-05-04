@@ -1,0 +1,3 @@
+SELECT CALL_ID, CALL_DATE
+FROM {{ ref('silver_veeva_calls') }}
+WHERE CALL_DATE > CURRENT_DATE()
